@@ -11,5 +11,5 @@ def grade(score):
         print("F")
     else:
         print("Bad score")
-score=float(input("Enter score: "))
+score=float(input("Enter score: ")) 
 grade(score)
