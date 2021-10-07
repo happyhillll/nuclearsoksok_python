@@ -9,3 +9,4 @@ while True:
 
 print(vote)
 f=open('vote.txt','w')
+f.w
