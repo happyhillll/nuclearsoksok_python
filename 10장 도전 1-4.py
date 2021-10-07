@@ -9,4 +9,6 @@ while True:
 
 print(vote)
 f=open('vote.txt','w')
-f.w
+for aarea,vvote in vote.items():
+    f.write(f'{aarea}:{vvote}\n')  #f-string 이용!!!!!
+f.close()  #하.. 이거 하는데 한시간 걸렸네 ....
