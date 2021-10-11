@@ -15,6 +15,6 @@ for line in f:
             grade="F"
     print(name,score,grade)
 
-#인덴트 조심하기!!!!!!
+#인덴트 조심하기!!!!!! 참고 : 도전 1-3
 
 
