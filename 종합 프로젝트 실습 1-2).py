@@ -19,7 +19,14 @@ while True:                        # 잔액이 부족할때까지 메뉴를 선�
     else:                   #돈이 남을 경우, 음료를 화면에 반환하고, '구입완료' 메시지를 출력하고 잔액을 계산한다. 
         print(menu[num-1],'구입완료')
         money=money-price[num-1]
-        print('잔액: ',money)   # 잔액을 출력한다.
+        print('잔액: ',money)
         print()
-    print('자판기 종료, 잔액 {} 반환'.format(money))     # 자판기가 종료되고 최종 잔액을 출력한다. 
-        
+    
+c500= money//500
+money= money-(c500*500)
+c100= money//100
+money= money-(c100*100)
+print('자판기 종료')
+print('coin500 : %d개 반환' % c500)
+print('coin100 : %d개 반환' % c100)
+print('나머지 : %d 반환' % money)   # 자판기가 종료되고 최종 잔액을 출력한다. 
